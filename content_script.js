@@ -20,7 +20,7 @@
                     break;
             }
         } catch (err) {
-            console.log("Error Bitsee: " + err);
+            console.log("Error btcCheck: " + err);
         }
     }
 
@@ -152,7 +152,7 @@
                 var img = document.createElement("img");
                 img.src = browser.extension.getURL("icons/logo32.png");
                 img.className = 'bitcoinBalanceIcon';
-                img.setAttribute('title', 'BitSee');
+                img.setAttribute('title', 'btcCheck');
                 img.setAttribute('alt', '');
                 img.style.cssText = 'height:1em;vertical-align:-10%;cursor:pointer;margin-left:.5em;display:inline;';
                 list[i].appendChild(img);
@@ -164,7 +164,7 @@
             }
 
         } catch (err) {
-            console.log("Error Bitsee: " + err);
+            console.log("Error btcCheck: " + err);
             return false;
         }
     }
